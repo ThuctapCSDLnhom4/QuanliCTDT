@@ -141,7 +141,6 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\jsx\Majordetail.jsx" />
     <Content Include="Scripts\jsx\Nation.jsx" />
     <Content Include="Scripts\jsx\Educationlevel.jsx" />
     <Content Include="Scripts\jsx\Major.jsx" />

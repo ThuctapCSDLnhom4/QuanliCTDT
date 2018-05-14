@@ -97,9 +97,7 @@ var App = React.createClass({
         $("#CODE").val('');
         $("#NAME").val('');
         $("#FACILITYCODE").val('');
-
-
-    },
+ },
 //phuong thuc quan trong nhat-->render html la ngoai
     render: function () {
         console.log("Ren the main");
@@ -144,7 +142,7 @@ var App = React.createClass({
 
                     <ListRow clist={this.state.data} startindex={this.state.startindex} loadData={this.loadData} setEdit={this.setEdit} />
                 </div>
-			</div>
+            </div>
     );
     }
 });
@@ -208,10 +206,7 @@ var ListRow = React.createClass({
                           <th>STT</th>
                           <th>Mã</th>
                           <th>Tên</th>
-                          <th>Thứ tự</th>
-                          <th>So sánh</th>
-                        <th>Ghi chú</th>
-                          <th>Chức năng</th>
+                          <th>Mã cơ sở</th>
                     </tr>
                 </thead>
               <tbody>{listRow}</tbody>
@@ -270,16 +265,14 @@ var RowDetail = React.createClass({
 				  <td>{this.props.item.CODE}</td>
 				  <td>{this.props.item.NAME}</td>
 				  <td>{this.props.item.FACILITYCODE}</td>
-				  <td>
-
+                  <td>
 
 
 
 					  <input type="button" className="btn btn-sm btn-primary" value="Sửa" onClick={()=>this.props.setEdit("Sửa bản ghi", this.props.item)} />
 				      &nbsp; &nbsp;
                       <input type="button" className="btn btn-sm btn-danger" value="Xóa" onClick={this.handleRemove} />
-
-				  </td>
+                </td>
 			  </tr>
           );
     }
@@ -419,7 +412,7 @@ var NewRow = React.createClass({
                                                 <div className="form-group col-sm-12">
                                                     <label className="col-sm-4 control-label">Mã</label>
                                                     <div className="col-sm-4 col-md-4">
-                                                        <input type="text" className="form-control" ref="CODEVIEW" id="CODEVIEW" />
+                                                        <input type="text" className="form-control" ref="CODE" id="CODE" />
                                                     </div>
                                                 </div>
                                                  <div className="form-group col-sm-12">
@@ -428,35 +421,13 @@ var NewRow = React.createClass({
                                                         <input type="text" className="form-control" ref="NAME" id="NAME" />
                                                     </div>
                                                  </div>
-
+                                   
                                                  <div className="form-group col-sm-12">
-                                                    <label className="col-sm-4 control-label">Không sử dụng</label>
+                                                    <label className="col-sm-4 control-label">Mã cơ sở</label>
                                                     <div className="col-sm-8">
-                                                        <input type="checkbox" ref="LOCK" id="LOCK" />
+                                                        <input type="text" className="form-control" ref="FACILITYCODE" id="FACILITYCODE" />
                                                     </div>
-                                                 </div>
-
-
-                                                  <div className="form-group col-sm-12">
-                                                    <label className="col-sm-4 control-label">Note</label>
-                                                    <div className="col-sm-8">
-                                                        <textarea ref="NOTE" id="NOTE" name="NOTE" rows="10"  className="col-sm-12" ></textarea>
-                                                    </div>
-                                                  </div>
-                                                 <div className="form-group col-sm-12">
-                                                    <label className="col-sm-4 control-label">Thứ tự sắp xếp</label>
-                                                    <div className="col-sm-8">
-                                                        <input type="number" className="form-control" ref="THEORDER" id="THEORDER" />
-                                                    </div>
-                                                 </div>
-                                                 <div className="form-group col-sm-12">
-                                                    <label className="col-sm-4 control-label">Mức độ so sánh</label>
-                                                    <div className="col-sm-8">
-                                                        <input type="text" className="form-control" ref="COMPARELEVEL" id="COMPARELEVEL" />
-                                                    </div>
-                                                 </div>
-
-
+                                                 </div>                                             
                                             </div>
             </form>
 

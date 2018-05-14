@@ -94,47 +94,7 @@ namespace HelloWorldReact.Models
             get;
             set;
         }
-        public virtual System.String EDITUSER
-        {
-            get;
-            set;
-        }
-        public virtual System.DateTime EDITTIME
-        {
-            get;
-            set;
-        }
-        public virtual System.Int16 LOCK
-        {
-            get;
-            set;
-        }
-        public virtual System.DateTime LOCKDATE
-        {
-            get;
-            set;
-        }
-        public virtual System.String WHOIS
-        {
-            get;
-            set;
-        }
-        public virtual System.String THETYPE
-        {
-            get;
-            set;
-        }
-        public virtual System.Int32 THEORDER
-        {
-            get;
-            set;
-        }
-        public virtual System.Int32 COMPARELEVEL
-        {
-            get;
-            set;
-        }
-
+       
         public override int GetHashCode()
         {
             return _ID.GetHashCode();

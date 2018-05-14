@@ -139,8 +139,8 @@ namespace HelloWorldReact.Controllers
 
             }
             //hết kiểm tra tồn tại bản ghi
-            obj_temp.EDITTIME = DateTime.Now;//Thời điểm sủa bản ghi
-            obj_temp.EDITUSER = ses.loginCode;//Người sửa bản ghi
+         //   obj_temp.EDITTIME = DateTime.Now;//Thời điểm sủa bản ghi
+         //   obj_temp.EDITUSER = ses.loginCode;//Người sửa bản ghi
 
             obj_temp.CODE = obj.CODE;
             obj_temp.NAME = obj.NAME;
@@ -154,8 +154,8 @@ namespace HelloWorldReact.Controllers
                 add = 1;
                 //Sinh mã
                 obj_temp.CODE = bus.genNextCode(obj);
-                obj_temp.LOCK = 0;
-                obj_temp.LOCKDATE = DateTime.Now;
+              //  obj_temp.LOCK = 0;
+               // obj_temp.LOCKDATE = DateTime.Now;
             }
             if (add == 1)
             {
@@ -163,17 +163,17 @@ namespace HelloWorldReact.Controllers
                 ret = bus.Insert(obj_temp);
 
             }
-            else
+         /*   else
             {
                 //gán _ID để xác định bản ghi sẽ được cập nhật
                 obj_temp._ID.CODE = obj.CODE;
-                if (obj_temp.LOCKDATE < SqlDateTime.MinValue.Value)
+              if (obj_temp.LOCKDATE < SqlDateTime.MinValue.Value)
                 {
                     obj_temp.LOCKDATE = SqlDateTime.MinValue.Value;
                 }
                 ret = bus.Update(obj_temp);
             }
-
+        */
             bus.CloseConnection();
 
             //some thing like that
