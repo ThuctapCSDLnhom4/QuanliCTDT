@@ -109,3 +109,40 @@ C:\Users\Admin\Desktop\New folder (4)\New folder\Code\HelloWorldReact\bin\ru-ru\
 C:\Users\Admin\Desktop\New folder (4)\New folder\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\New folder (4)\New folder\Code\HelloWorldReact\obj\Debug\HelloWorldReact.dll
 C:\Users\Admin\Desktop\New folder (4)\New folder\Code\HelloWorldReact\obj\Debug\HelloWorldReact.pdb
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\HelloWorldReact.dll.config
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\HelloWorldReact.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\HelloWorldReact.pdb
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Core.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Jint.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\JavaScriptEngineSwitcher.Msie.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\Jint.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\JSPool.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\Microsoft.Web.Infrastructure.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\MsieJavaScriptEngine.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\Newtonsoft.Json.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\React.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\React.Web.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\React.Web.Mvc4.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Helpers.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Mvc.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Razor.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Webpages.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\WebActivatorEx.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\JSPool.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\Newtonsoft.Json.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\React.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\React.Web.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\React.Web.Mvc4.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Razor.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Webpages.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Webpages.Deployment.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Webpages.Razor.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Helpers.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\System.Web.Mvc.xml
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\bin\ru-ru\MsieJavaScriptEngine.resources.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\obj\Debug\HelloWorldReact.csprojResolveAssemblyReference.cache
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\obj\Debug\HelloWorldReact.dll
+D:\Tài liệu\Thực tập csdl\Quản lý chương trình đào tạo\QuanliCTDT\New folder\Code\HelloWorldReact\obj\Debug\HelloWorldReact.pdb

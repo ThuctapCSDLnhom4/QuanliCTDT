@@ -126,6 +126,7 @@
     <Compile Include="Controllers\DetailController.cs" />
     <Compile Include="Controllers\EducationlevelController.cs" />
     <Compile Include="Controllers\BranchController.cs" />
+    <Compile Include="Controllers\MajorController.cs" />
     <Compile Include="Controllers\ProvinceController.cs" />
     <Compile Include="Controllers\NationController.cs" />
     <Compile Include="IS.authen.cs" />
@@ -140,9 +141,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\jsx\Detail.jsx" />
+    <Content Include="Scripts\jsx\Majordetail.jsx" />
     <Content Include="Scripts\jsx\Nation.jsx" />
     <Content Include="Scripts\jsx\Educationlevel.jsx" />
+    <Content Include="Scripts\jsx\Major.jsx" />
     <None Include="Scripts\jsx\HelloWorld.jsx" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\react\JSXTransformer-0.12.2.js" />
@@ -158,6 +160,7 @@
     <Content Include="Scripts\jsx\Branch.jsx" />
     <Content Include="Views\Home\educationlevel.cshtml" />
     <Content Include="Views\Home\detail.cshtml" />
+    <Content Include="Views\Home\Majordetail.cshtml" />
     <None Include="Views\Home\nationreact.cshtml" />
     <None Include="Views\Home\login.cshtml" />
     <Content Include="Web.config">
@@ -181,6 +184,8 @@
     <Compile Include="Models\BRANCH_BUS.cs" />
     <Compile Include="Models\EDUCATIOINLEVEL_OBJ.cs" />
     <Compile Include="Models\EDUCATIOINLEVEL_BUS.cs" />
+    <Compile Include="Models\MAJOR_BUS.cs" />
+    <Compile Include="Models\MAJOR_OBJ.cs" />
     <Compile Include="Models\PROVINCE_BUS.cs" />
     <Compile Include="Models\NATION_BUS.cs" />
     <Compile Include="Models\PROVINCE_OBJ.cs" />
