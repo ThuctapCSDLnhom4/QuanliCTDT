@@ -1,5 +1,4 @@
-﻿//var DateTimePicker = require('/Scripts/bootstrap-datetimepicker.js');
-//1 comportment lon nhat
+﻿//1 comportment lon nhat
 var App = React.createClass({
     getInitialState: function () { //Khởi tạo, data=list department
         return { data: [],  firsttime: 1 };
@@ -30,7 +29,7 @@ var App = React.createClass({
             url: '/major/getlist',
             dataType: 'json',
             data: {
-                keysearchCodeView: $.trim($('#keysearch-CodeView').val()),
+                keysearchCodeView: $.trim($('#keysearch-Code').val()),
                 keysearchName: $.trim($('#keysearch-Name').val()),
 //                page: homeConfig.pageIndex,
                 pageSize: 0//default from server
@@ -58,7 +57,7 @@ var App = React.createClass({
     eventClick: function () {
         //jquery set lai value
         $("#keysearch-Name").val("");
-        $("#keysearch-CodeView").val("");
+        $("#keysearch-Code").val("");
         if ($('#div-search').css('display') == 'none') {
             $("#div-search").css("display", "block");
         } else {
@@ -123,7 +122,7 @@ var App = React.createClass({
                             <div className="col-lg-3 col-md-6">
                                 <label className="col-md-2 control-label">Mã</label>
                                 <div className="col-md-10">
-                                    <input type="text" className="form-control" id="keysearch-CodeView" />
+                                    <input type="text" className="form-control" id="keysearch-Code" />
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6">
@@ -302,9 +301,9 @@ var NewRow = React.createClass({
         var NAME = this.refs.NAME.getDOMNode().value;
         console.log("name");
 
-        var CODEVIEW = this.refs.CODEVIEW.getDOMNode().value;
+        var CODEVIEW = this.refs.FACILITYCODE.getDOMNode().value;
         console.log("facilitycode");
-
+        
      
         var data = {
             CODE: CODE,
@@ -315,9 +314,9 @@ var NewRow = React.createClass({
             THEORDER: THEORDER,
             COMPARELEVEL: COMPARELEVEL,
             LOCK: LOCK  ? 1 : 0,
-            thetype: $.trim($('#thetype').val()),
-            keysearchCodeView: $.trim($('#keysearch-CodeView').val()),
-            keysearchName: $.trim($('#keysearch-Name').val()),*/
+            thetype: $.trim($('#thetype').val()), */
+            keysearchCode: $.trim($('#keysearch-Code').val()),
+            keysearchName: $.trim($('#keysearch-Name').val()),
         }
    if (CODEVIEW == "") {
             alert("Chưa nhập mã");
@@ -333,7 +332,7 @@ var NewRow = React.createClass({
 
             //Add or edit 1 department
             $.ajax({
-                url: "/educationlevel/update",
+                url: "/major/update",
                 type: 'POST',
                 data: data,
                 dataType: 'json',
