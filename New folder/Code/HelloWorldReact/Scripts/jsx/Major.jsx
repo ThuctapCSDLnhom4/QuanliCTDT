@@ -29,7 +29,7 @@ var App = React.createClass({
             url: '/major/getlist',
             dataType: 'json',
             data: {
-                keysearchCodeView: $.trim($('#keysearch-Code').val()),
+                keysearchCode: $.trim($('#keysearch-Code').val()),
                 keysearchName: $.trim($('#keysearch-Name').val()),
 //                page: homeConfig.pageIndex,
                 pageSize: 0//default from server
@@ -301,7 +301,7 @@ var NewRow = React.createClass({
         var NAME = this.refs.NAME.getDOMNode().value;
         console.log("name");
 
-        var CODEVIEW = this.refs.FACILITYCODE.getDOMNode().value;
+        var FACILITYCODE = this.refs.FACILITYCODE.getDOMNode().value;
         console.log("facilitycode");
         
      
