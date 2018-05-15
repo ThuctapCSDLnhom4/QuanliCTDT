@@ -75,8 +75,13 @@ namespace HelloWorldReact.Models
             _ID = new BusinessObjectID();
             _ID = id;
         }
-        [Display(Name = "Mã")]
         public virtual System.String CODE
+        {
+            get;
+            set;
+        }
+        [Display(Name = "Mã")]
+        public virtual System.String CODEVIEW
         {
             get;
             set;

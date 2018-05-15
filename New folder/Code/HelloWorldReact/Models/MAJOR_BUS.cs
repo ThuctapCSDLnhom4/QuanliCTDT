@@ -134,11 +134,12 @@ namespace HelloWorldReact.Models
         {
             int ret = 0;
             DBBase db = new DBBase(ConfigurationSettings.AppSettings["connectionString"].ToString());
-            string sql = "INSERT INTO MAJOR(code,name,facilitycode) VALUES(@code,@name,@facilitycode)";
+            string sql = "INSERT INTO MAJOR(code,codeview,name,facilitycode) VALUES(@code,@codeview,@name,@facilitycode)";
             SqlCommand com = new SqlCommand();
             com.CommandText = sql;
             com.CommandType = CommandType.Text;
             com.Parameters.Add("@code", SqlDbType.VarChar).Value = obj.CODE;
+            com.Parameters.Add("@codeview", SqlDbType.VarChar).Value = obj.CODEVIEW;
             com.Parameters.Add("@name", SqlDbType.NVarChar).Value = obj.NAME;
             com.Parameters.Add("@facilitycode", SqlDbType.VarChar).Value = obj.FACILITYCODE;
 
@@ -150,7 +151,8 @@ namespace HelloWorldReact.Models
             int ret = 0;
             DBBase db = new DBBase(ConfigurationSettings.AppSettings["connectionString"].ToString());
             string sql = @"UPDATE MAJOR SET 
-                    code=@code
+                     code=@code
+                    ,codeview=@codeview
                     , name=@name
                     , facilitycode =@facilitycode
                     WHERE code=@code_key
@@ -159,8 +161,10 @@ namespace HelloWorldReact.Models
             com.CommandText = sql;
             com.CommandType = CommandType.Text;
             com.Parameters.Add("@code", SqlDbType.VarChar).Value = obj.CODE;
+            com.Parameters.Add("@codeview", SqlDbType.VarChar).Value = obj.CODEVIEW;
             com.Parameters.Add("@name", SqlDbType.NVarChar).Value = obj.NAME;
             com.Parameters.Add("@facilitycode", SqlDbType.VarChar).Value = obj.FACILITYCODE;
+            com.Parameters.Add("@code_key", SqlDbType.VarChar).Value = obj._ID.CODE;
 
             ret = db.doCommand(ref com);
             return ret;

@@ -16,7 +16,7 @@ namespace HelloWorldReact.Controllers
     {
         session ses = new session();
 
-        public JsonResult getlist(string keysearchCode, string keysearchName)
+        public JsonResult getlist(string keysearchCodeView, string keysearchName)
         {
             List<MAJOR_OBJ> li = null;
             //Không trả về dữ liêu khi chưa đăng nhập
@@ -34,10 +34,10 @@ namespace HelloWorldReact.Controllers
             //Khai báo lấy dữ liệu
             MAJOR_BUS bus = new MAJOR_BUS();
             List<spParam> lipa = new List<spParam>();
-            //Thêm điều kiện lọc theo codeview nếu có nhập
-            if (keysearchCode != "")
+            //Thêm điều kiện lọc theo code nếu có nhập
+            if (keysearchCodeView != "")
             {
-                lipa.Add(new spParam("CODE", System.Data.SqlDbType.VarChar, keysearchCode, 1));//search on code
+                lipa.Add(new spParam("CODEVIEW", System.Data.SqlDbType.VarChar, keysearchCodeView, 1));//search on code
             }
             //Thêm phần điều kiện lọc theo tên nếu có nhập
             if (keysearchName != "")
@@ -104,7 +104,7 @@ namespace HelloWorldReact.Controllers
         /// <summary>
         /// Cập nhật một bản ghi được gửi lên từ phía client
         /// </summary>
-        public JsonResult update(MAJOR_OBJ obj, string keysearchCode, string keysearchName)
+        public JsonResult update(MAJOR_OBJ obj, string keysearchCodeView, string keysearchName)
         {
             if (ses.func("ADMINDIRE") <= 0)
             {
@@ -139,9 +139,9 @@ namespace HelloWorldReact.Controllers
 
             }
             //hết kiểm tra tồn tại bản ghi
-         //   obj_temp.EDITTIME = DateTime.Now;//Thời điểm sủa bản ghi
-         //   obj_temp.EDITUSER = ses.loginCode;//Người sửa bản ghi
-
+            //   obj_temp.EDITTIME = DateTime.Now;//Thời điểm sủa bản ghi
+            //   obj_temp.EDITUSER = ses.loginCode;//Người sửa bản ghi
+            obj_temp.CODEVIEW = obj.CODEVIEW;
             obj_temp.CODE = obj.CODE;
             obj_temp.NAME = obj.NAME;
             obj_temp.FACILITYCODE = obj.FACILITYCODE;
@@ -163,17 +163,17 @@ namespace HelloWorldReact.Controllers
                 ret = bus.Insert(obj_temp);
 
             }
-         /*   else
+           else
             {
                 //gán _ID để xác định bản ghi sẽ được cập nhật
                 obj_temp._ID.CODE = obj.CODE;
-              if (obj_temp.LOCKDATE < SqlDateTime.MinValue.Value)
+            /*  if (obj_temp.LOCKDATE < SqlDateTime.MinValue.Value)
                 {
                     obj_temp.LOCKDATE = SqlDateTime.MinValue.Value;
-                }
+                } */
                 ret = bus.Update(obj_temp);
             }
-        */
+
             bus.CloseConnection();
 
             //some thing like that

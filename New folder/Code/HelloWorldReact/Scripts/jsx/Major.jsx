@@ -1,7 +1,7 @@
-﻿//1 comportment lon nhat
+﻿/*1 comportment lon nhat*/
 var App = React.createClass({
     getInitialState: function () { //Khởi tạo, data=list department
-        return { data: [],  firsttime: 1 };
+        return { data: [],  firsttime: 1 }; 
     },
     componentWillMount: function () {
 
@@ -29,7 +29,7 @@ var App = React.createClass({
             url: '/major/getlist',
             dataType: 'json',
             data: {
-                keysearchCode: $.trim($('#keysearch-Code').val()),
+                keysearchCodeView: $.trim($('#keysearch-CodeView').val()),
                 keysearchName: $.trim($('#keysearch-Name').val()),
 //                page: homeConfig.pageIndex,
                 pageSize: 0//default from server
@@ -57,7 +57,7 @@ var App = React.createClass({
     eventClick: function () {
         //jquery set lai value
         $("#keysearch-Name").val("");
-        $("#keysearch-Code").val("");
+        $("#keysearch-CodeView").val("");
         if ($('#div-search').css('display') == 'none') {
             $("#div-search").css("display", "block");
         } else {
@@ -83,6 +83,7 @@ var App = React.createClass({
             console.log("Có giá trị");
             //set gia tri cho cac thanh phan giao dien
             $("#CODE").val(obj.CODE);
+            $("#CODEVIEW").val(obj.CODEVIEW);
             $("#NAME").val(obj.NAME);
             $("#FACILITYCODE").val(obj.FACILITYCODE);
 
@@ -94,6 +95,7 @@ var App = React.createClass({
     clearInput: function () {
         console.log("Clear me");
         $("#CODE").val('');
+        $("#CODEVIEW").val('');
         $("#NAME").val('');
         $("#FACILITYCODE").val('');
  },
@@ -122,7 +124,7 @@ var App = React.createClass({
                             <div className="col-lg-3 col-md-6">
                                 <label className="col-md-2 control-label">Mã</label>
                                 <div className="col-md-10">
-                                    <input type="text" className="form-control" id="keysearch-Code" />
+                                    <input type="text" className="form-control" id="keysearch-CodeView" />
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6">
@@ -261,7 +263,7 @@ var RowDetail = React.createClass({
             //Hiển thị một phần tử trên danh sách
 			  <tr>
 				   <td>{this.props.index}</td>
-				  <td>{this.props.item.CODE}</td>
+				   <td>{this.props.item.CODEVIEW}</td>
 				  <td>{this.props.item.NAME}</td>
 				  <td>{this.props.item.FACILITYCODE}</td>
                   <td>
@@ -298,6 +300,9 @@ var NewRow = React.createClass({
         var CODE = this.refs.CODE.getDOMNode().value;
         console.log("code");
 
+        var CODEVIEW = this.refs.CODEVIEW.getDOMNode().value;
+        console.log("codeview");
+
         var NAME = this.refs.NAME.getDOMNode().value;
         console.log("name");
 
@@ -307,7 +312,7 @@ var NewRow = React.createClass({
      
         var data = {
             CODE: CODE,
-     //       CODEVIEW: CODEVIEW,
+            CODEVIEW: CODEVIEW,
             NAME: NAME,
             FACILITYCODE: FACILITYCODE,
       /*      NOTE: NOTE,
@@ -315,7 +320,7 @@ var NewRow = React.createClass({
             COMPARELEVEL: COMPARELEVEL,
             LOCK: LOCK  ? 1 : 0,
             thetype: $.trim($('#thetype').val()), */
-            keysearchCode: $.trim($('#keysearch-Code').val()),
+            keysearchCodeView: $.trim($('#keysearch-CodeView').val()),
             keysearchName: $.trim($('#keysearch-Name').val()),
         }
    if (CODEVIEW == "") {
@@ -411,7 +416,7 @@ var NewRow = React.createClass({
                                                 <div className="form-group col-sm-12">
                                                     <label className="col-sm-4 control-label">Mã</label>
                                                     <div className="col-sm-4 col-md-4">
-                                                        <input type="text" className="form-control" ref="CODE" id="CODE" />
+                                                        <input type="text" className="form-control" ref="CODEVIEW" id="CODEVIEW" />
                                                     </div>
                                                 </div>
                                                  <div className="form-group col-sm-12">
